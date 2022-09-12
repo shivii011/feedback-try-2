@@ -8,7 +8,7 @@ class Name extends Component {
       name: '',
       email: '',
       number: '',
-      message:''
+      message: ''
 
     }
   }
@@ -41,33 +41,36 @@ class Name extends Component {
   }
   render() {
     return (
-      <form onSubmit={this.handleSubmit}>
-        <div>
-          <label>Name : </label>
-          <input type='text'
-            value={this.state.name}
-            onChange={this.handleNameChange} />
-        </div>
-        <div>
-          <label>E-Mail : </label>
-          <input type="email"
-            value={this.state.email}
-            onChange={this.handleEmailChange} />
-        </div>
-        <div>
-          <label>Contact Number : </label>
-          <input type='number'
-            value={this.state.number}
-            onChange={this.handleNumberChange} />
-        </div>
-        <div>
-          <label>Message : </label>
-          <input type='text'
-            value={this.state.message}
-            onChange={this.handleMessageChange} />
-        </div>
-        <Submit />
-      </form>
+      <div>
+        <form onSubmit={this.handleSubmit}>
+          <div>
+            <label>Name : </label>
+            <input type='text'
+              value={this.state.name}
+              onChange={this.handleNameChange} />
+          </div>
+          <div>
+            <label>E-Mail : </label>
+            <input type="email"
+              value={this.state.email}
+              onChange={this.handleEmailChange} />
+          </div>
+          <div>
+            <label>Contact Number : </label>
+            <input type='number'
+              value={this.state.number}
+              onChange={this.handleNumberChange} />
+          </div>
+          <div>
+            <label>Message : </label>
+            <input type='text'
+              value={this.state.message}
+              onChange={this.handleMessageChange} />
+          </div>
+          <Submit />
+        </form>
+       
+      </div>
     )
   }
 }
